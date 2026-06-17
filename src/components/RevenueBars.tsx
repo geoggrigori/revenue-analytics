@@ -11,7 +11,10 @@ export function RevenueBars({ months }: { months: MonthPoint[] }) {
       </h2>
       <div className="flex h-48 items-end gap-2">
         {months.map((m) => (
-          <div key={m.month} className="group flex flex-1 flex-col items-center">
+          <div
+            key={m.month}
+            className="group flex h-full flex-1 flex-col items-center"
+          >
             <div className="relative flex w-full flex-1 items-end">
               <div
                 className="w-full rounded-t bg-gradient-to-t from-violet-600 to-violet-400 transition-all group-hover:from-violet-700 group-hover:to-violet-500"
